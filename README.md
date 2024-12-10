@@ -112,4 +112,4 @@ python infer.py
 ```
 
 You can use the fine-tuned model for inference. <be>
-N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing). If you want to see the original repo, please check this out: [```CogVLM2 Fine-tune```](https://github.com/THUDM/CogVLM2/tree/main/finetune_demo)
+N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing). <be> If you want to see the original repo, please check this out: [```CogVLM2 Fine-tune```](https://github.com/THUDM/CogVLM2/tree/main/finetune_demo)
