@@ -97,7 +97,7 @@ GPU memory usage:
 |    6   N/A  N/A    704920      C   python          72538MiB |
 |    7   N/A  N/A    704921      C   python          72442MiB |
 +-------------------------------------------------------------+
-
+```
 
 
 **Note**: We strongly recommend that you use the `BF16` format for fine-tuning to avoid the problem of Loss being `NaN`.
