@@ -7,19 +7,19 @@
 + Only examples of fine-tuning language models are provided.
 + Only provide Lora fine-tuning examples.
 + Only provide examples of fine-tuning the dialogue model.
-+ We currently do not support using 'zero3' fine-tuning, which may result in the model not being able to read.
+
 
 ## Minimum configuration
 
 - We Only test A100 GPUs with 80GB memory for finetune. It requires at least 73GB of GPU memory using 8 GPUs with zero2.
-- Tensor parallelism is not supported yet, that is, the model is split into multiple graphics cards for fine-tuning.
+- For fine-tuning The [``` Lambda cloud ```] (https://lambdalabs.com/) has been used.
 
 ## Start fine-tuning
 
 1. Download the data set and install dependencies
 
 In this demo, developers can use the [CogVLM-SFT-311K](https://huggingface.co/datasets/THUDM/CogVLM-SFT-311K) open
-source data set provided by us or build their own data set in the same format for fine-tuning. .
+the source data set provided by us or build their own data set in the same format for fine-tuning.
 
 The data format is as follows:
 
@@ -116,5 +116,5 @@ address according to the configuration requirements in the code. Then run:
 python peft_infer.py
 ```
 
-You can use the fine-tuned model for inference.
-N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing)
+You can use the fine-tuned model for inference. <be>
+N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing). If you want to see the original repo, please check this out: [```CogVLM2 Fine-tune```] (https://github.com/THUDM/CogVLM2/tree/main/finetune_demo)
