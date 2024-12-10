@@ -12,7 +12,7 @@
 ## Minimum configuration
 
 - We Only test A100 GPUs with 80GB memory for finetune. It requires at least 73GB of GPU memory using 8 GPUs with zero2.
-- For fine-tuning The [``` Lambda cloud ```] (https://lambdalabs.com/) has been used.
+- For fine-tuning The [``` Lambda cloud ```](https://lambdalabs.com/) has been used.
 
 ## Start fine-tuning
 
@@ -53,7 +53,7 @@ self.label_dir = os.path.join(root_dir, 'labels_en')  # or 'labels_zh' or 'label
 }
 ```
 
-Before starting fine-tuning, you need to install the relevant dependencies. you also need to install the dependencies in the  [basic_demo](../basic_demo/requirements.txt).
+Before starting fine-tuning, you need to install the relevant dependencies and the dependencies in the  ```requirements.txt``` file.
 
 ```bash
 pip install -r requirements.txt
@@ -117,4 +117,4 @@ python peft_infer.py
 ```
 
 You can use the fine-tuned model for inference. <be>
-N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing). If you want to see the original repo, please check this out: [```CogVLM2 Fine-tune```] (https://github.com/THUDM/CogVLM2/tree/main/finetune_demo)
+N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing). If you want to see the original repo, please check this out: [```CogVLM2 Fine-tune```](https://github.com/THUDM/CogVLM2/tree/main/finetune_demo)
