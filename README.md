@@ -104,7 +104,7 @@ GPU memory usage:
 
 3. Inference on the fine-tuned model
 
-By running `peft_infer.py` you can use the fine-tuned model to generate text. You need to configure the fine-tuned model
+By running `infer.py` you can use the fine-tuned model to generate text. You need to configure the fine-tuned model
 address according to the configuration requirements in the code. Then run:
 
 ```shell
