@@ -117,3 +117,4 @@ python peft_infer.py
 ```
 
 You can use the fine-tuned model for inference.
+N.B: You can also use the previously fine-tuned model from [```Google Drive```](https://drive.google.com/drive/folders/1C7KZI2VosMFi6qsMu6kzdmjPaovWdZQL?usp=sharing)
