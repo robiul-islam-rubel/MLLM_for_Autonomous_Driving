@@ -64,11 +64,11 @@ system environment.
 
 2. Run the fine-tuning program
 
-We provide a fine-tuning script `peft_lora.py` that uses multiple cards on a single machine (including a single card).
+We provide a fine-tuning script ```fine_tune.py ``` that uses multiple cards on a single machine (including a single card).
 You can start fine-tuning by running the following command.
 
 ```bash
-deepspeed peft_lora.py --ds_config ds_config.yaml
+deepspeed fine_tune.py --ds_config ds_config.yaml
 ```
 
 The figure below shows the memory usage during fine-tuning.
@@ -97,13 +97,8 @@ GPU memory usage:
 |    6   N/A  N/A    704920      C   python          72538MiB |
 |    7   N/A  N/A    704921      C   python          72442MiB |
 +-------------------------------------------------------------+
-```
 
-While the code is running, Loss data will be recorded by tensorboard to facilitate visual viewing of Loss convergence.
 
-```shell
-tensorboard --logdir=output
-```
 
 **Note**: We strongly recommend that you use the `BF16` format for fine-tuning to avoid the problem of Loss being `NaN`.
 
@@ -113,7 +108,7 @@ By running `peft_infer.py` you can use the fine-tuned model to generate text. Yo
 address according to the configuration requirements in the code. Then run:
 
 ```shell
-python peft_infer.py
+python infer.py
 ```
 
 You can use the fine-tuned model for inference. <be>
